@@ -28,7 +28,7 @@ android {
 dependencies {
 
     def lifecycle_version = '2.0.0'
-    def androidx_appcompat_version = '1.0.0'
+    def androidx_appcompat_version = '1.0.2'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
