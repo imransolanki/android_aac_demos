@@ -29,7 +29,7 @@ public class DetailFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         numberViewModel = ViewModelProviders.of(getActivity()).get(NumberViewModel.class);
-        numberViewModel.getNumber().observe(this, new Observer<Integer>() {
+        numberViewModel.getNumber().observe(getActivity(), new Observer<Integer>() {
             @Override
             public void onChanged(Integer integer) {
                 number.setText(integer.toString());
